@@ -29,14 +29,14 @@ $(function(){
         .reduce((p,c) => p+c.value+'/', host+`/tasks/`);
       let success = function(res,txt,xhr){ loadAll(); $('input[type="text"]').val("") };
       $.post({url, success});
-    })
+    });
 
     function loadAll(){
       $("#new, #started, #completed").html("");
       $.ajax({
         url: host+"/tasks",
         success: function(res, txt, xhr){
-          res.map(e=>{
+          res.forEach(e=>{
             let newStatus, buttonCaption;
             if (e.status=='new'){
               newStatus = 'started';
