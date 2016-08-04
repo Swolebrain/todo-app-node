@@ -1,0 +1,18 @@
+.task{
+  margin: 15px;
+  padding: 10px;
+  border-radius:25px;
+  border: 2px solid black;
+}
+
+.task h4{
+  display: inline-block;
+}
+
+.action{
+  float:right;
+}
+
+.task .fa {
+  margin-left: 5px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale:1, user-scalable:no" />
+    <meta charset="utf-8" />
+    <title>My Gimpy Scrum Board</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="text-center">My Gimpy Scrum Board</h1>
+    <div class="container-fluid" id="board">
+      <div class="row">
+        <div class="col-xs-12 col-lg-3">
+          <h2>New Tasks</h2>
+          <div id="new"></div>
+        </div>
+        <div class="col-xs-12 col-lg-3">
+          <h2>Started Tasks</h2>
+          <div id="started"></div>
+        </div>
+        <div class="col-xs-12 col-lg-3">
+          <h2>Completed Tasks</h2>
+          <div id="completed"></div>
+        </div>
+        <div class="col-xs-12 col-lg-3">
+          <h2>Add a Task</h2>
+          <form>
+            <div class="form-group">
+              <label for="desc">Description</label>
+              <input class="form-control" type="text" name="desc" />
+            </div>
+            <div class="form-group">
+              <label for="uid">User ID</label>
+              <input class="form-control" type="text" name="uid" id="uid" />
+            </div>
+            <input type="hidden" name="status" value="new" />
+            <a id="create" class="btn btn-primary">Create Task</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

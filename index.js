@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 });
 
 /* ROUTES */
-app.get('/', (req,res ) => res.end("hi2"));
+app.use( express.static('frontend') );
 
 app.get('/tasks', (req,res) => {
   connection.query('SELECT * FROM tasks', (err, rows)=>{
