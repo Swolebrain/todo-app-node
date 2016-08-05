@@ -4,7 +4,7 @@ const connection = mysql.createConnection({
   user: 'root',
   password: 'Thug1Life',
   database: 'todoapp',
-  host: 'localhost'
+  host: '104.131.17.187'
 });
 connection.connect((err)=>console.log("****"+err));
 
