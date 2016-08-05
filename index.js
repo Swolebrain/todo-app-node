@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
   database: 'todoapp',
   host: 'localhost'
 });
-connection.connect();
+connection.connect((err)=>console.log("****"+err););
 
 const express = require('express');
 const app = express();
