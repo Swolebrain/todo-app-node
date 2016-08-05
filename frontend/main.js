@@ -1,7 +1,7 @@
 
 $(function(){
   //entry point for program:
-  let host = "http://localhost:9999";
+  let host = "http://www.swolebrain.com:9999";
   loadAll();
 
   /* EVENT HANDLER FOR TASK BUTTON */
